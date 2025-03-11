@@ -22,12 +22,17 @@ PEOPLE_SEARCH_SITES = {
 
 # Personal data (can be expanded with past info)
 PERSONAL_INFO = {
-    "names": ["Pankaj Bavishi"],
-    "emails": ["pankaj.bavishi@gmail.com", "pbavishi@ehotmail.com"],
-    "phone_numbers": ["612-433-2136", "+919970015723"],
-    "addresses": ["123 Main St, City, State, ZIP", "Previous Address, State"],
+    "names": [input("Enter the Full Name: ")],
+    "emails": [input("Enter current email:"), input("Enter old email:")],
+    "phone_numbers": [input("Enter Current Phone:"), input("Enter old Phone:")],
+    "addresses": [input("Enter Current Address:"), input("Enter emailold address:")],
 }
 
+
+#FULL_NAME = input("Enter the Full Name: ")
+#PHONE_NUMBER = input("Enter the phone number: ")
+#EMAIL = input("Enter email:")  # Required for some requests
+#ADDRESS= input("Enter the Address: ")
 # Database setup
 conn = sqlite3.connect("privacy_tracking.db")
 cursor = conn.cursor()

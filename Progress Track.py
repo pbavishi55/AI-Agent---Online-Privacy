@@ -18,10 +18,11 @@ PEOPLE_SEARCH_SITES = {
 }
 
 # User details
-FULL_NAME = "Jigar Doshi"
-PHONE_NUMBER = "612-433-2136"
-EMAIL = "pnkaj.bavishi@gmail.com"
-ADDRESS = "1104 Laurtrec Terrace, Sunnyvale, CA 94087"
+
+FULL_NAME = input("Enter the Full Name: ")
+PHONE_NUMBER = input("Enter the phone number: ")
+EMAIL = input("Enter email:")  # Required for some requests
+ADDRESS= input("Enter the Address: ")
 
 # Database connection
 conn = sqlite3.connect("removal_progress.db")

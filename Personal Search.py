@@ -14,10 +14,12 @@ PEOPLE_SEARCH_SITES = [
     "https://www.beenverified.com/app/optout/search",
 ]
 
-FULL_NAME = "John Doe"  # Replace with your name
-PHONE_NUMBER = "123-456-7890"  # Replace with your phone number
-EMAIL = "your-email@example.com"  # Used for verification
-ADDRESS = "123 Main St, City, State, ZIP"  # If required
+FULL_NAME = input("Enter the Full Name: ")
+PHONE_NUMBER = input("Enter the phone number: ")
+EMAIL = input("Enter email:")  # Required for some requests
+ADDRESS= input("Enter the Address: ")
+
+
 
 # Function to search for personal info on a site
 def search_personal_info(url, name):
